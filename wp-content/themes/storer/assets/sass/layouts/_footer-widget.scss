@@ -1,0 +1,25 @@
+.twp-footer-widget-section{
+    background-color: $header_color;
+    color: $header_bg_text_color;
+    padding-top: 15px;
+    
+    a{
+        color: $header_bg_text_color;
+        &:visited{
+            color: $header_bg_text_color;
+        }
+        &:hover{
+            color: $secondary_color;
+        }
+    }
+    .twp-wrapper{
+        justify-content: center;
+        @include border-bottom();
+        border-color: rgba($color_white,0.68);
+    }
+    .widget,
+    .widget-title{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}

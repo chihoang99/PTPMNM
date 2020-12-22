@@ -1,0 +1,52 @@
+body{
+    color: $text_color;
+    font-family: $root_font;
+    font-size: 15px;
+    background-color: rgba(234, 239, 242, 0.42);
+    font-weight: $font_weight_normal;
+}
+a{
+    text-decoration: none;
+    color: $text_color;
+    @include transition();
+    &:visited{
+        color: $text_color; 
+    }
+    &:hover{
+        color: $primary_color;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Hind";
+}
+.twp-section-title,
+.twp-page-title{
+    font-size: 22px;
+    @include media(xs){
+        font-size: 30px;
+    }
+    @include media(sm){
+        font-size: 35px;
+    }
+}
+
+.twp-post-title{
+    font-size: 18px;
+}
+.twp-post-title-sm{
+    font-size: 14px;
+    font-weight: 400;
+}
+.twp-post-title-md{
+    font-size: 20px;
+    color: $color_black;
+    @include media(sm){
+        font-size: 22px;
+    }
+    a{
+        color: inherit;
+        &:hover{
+            color: $primary_color;
+        }
+    }
+}

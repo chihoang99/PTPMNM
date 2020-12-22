@@ -1,0 +1,33 @@
+.#{$prefix}-popular-product-section{
+    padding: 30px 0 60px;
+    .#{$prefix}-title-section{
+        padding-top: 30px;
+    }
+    .#{$prefix}-product-list{
+        list-style: none;
+        margin: 0 -7.5px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        .#{$prefix}-product{
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+            margin-top: 30px;
+            @include media(xs){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            @include media(sm){
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+            }
+            @include media(lg){
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+    
+}

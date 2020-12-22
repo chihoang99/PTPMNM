@@ -1,0 +1,39 @@
+.twp-meta-tag{
+    span{
+        display: inline-block;
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+    .twp-icon{
+        font-size: 18px;
+        color: $primary_color;
+    }
+    .posts-date{
+        .twp-icon{
+            font-size: 16px;
+        }
+    }
+    &.twp-meta-tag-style-1{
+        .item-metadata{
+            padding-right: 20px;
+        }
+    }
+}
+
+.twp-meta-tag-secondary{
+    color: $secondary_color;
+    .twp-icon{
+        color: $secondary_color;
+    }
+    a{
+        color: $secondary_color;
+        &:visited{
+            color: $secondary_color;
+        }
+        &:hover{
+            color: $primary_color;
+        }
+        
+    }
+
+}

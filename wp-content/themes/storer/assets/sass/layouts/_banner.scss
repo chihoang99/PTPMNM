@@ -1,0 +1,32 @@
+.#{$prefix}-banner-section{
+    .#{$prefix}-image-section{
+        height:  400px;
+    }
+    .#{$prefix}-desc{
+        @include media(lg){
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+    }
+    .slick-arrow{
+        opacity: 0;
+        @include media(sm){
+            opacity: 1;
+        }
+    }
+    .#{$prefix}-banner-slider{
+        .slick-active{
+            .twp-image-section{
+                @include animation( bhat-fade-in 0.8s linear both);
+            }
+            .#{$prefix}-post-title{
+                @include animation( twp-entrance-inline 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both );
+            }
+            .#{$prefix}-btn-section{
+                @include animation( twp-entrance-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both );
+            }
+        }
+    }
+}

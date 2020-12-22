@@ -1,0 +1,11 @@
+.#{$prefix}-store-feature-section{
+    padding: 30px 0 45px;
+    .#{$prefix}-wrapper{
+        @include media(lg){
+            justify-content: center;
+        }
+    }
+    .#{$prefix}-store-feature-post{
+        margin-top: 15px;
+    }
+}
